@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Портфолио</title>
+        <link rel="stylesheet" href="css/styleForPlates.css">
+        <link rel="stylesheet" href="css/styleForSlider.css">
+        <link rel="stylesheet" href="css/styleForFooter.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+
+        <header>
+           
+
+        </header>
+
+        <main>
+            
+            <div class = "plates">
+                <div class="tall">
+                    <img src="images\imagesForPlates\uzor.png">
+                </div>
+                <div class="tall">
+                    <img src="images\imagesForPlates\verticalName.png">
+                </div>
+                <div class="forHoverOnPlate">
+                    <img src="images\imagesForPlates\logo.png">
+                </div>
+                <div class="forHoverOnPlate onThisPage">
+                    <a href="index.html">
+                        <img src="images\imagesForPlates\main.png">
+                    </a>
+                </div>
+                <div class="forHoverOnPlate">
+                    <a href="aboutMe.html">
+                        <img src="images\imagesForPlates\about.png">
+                    </a>
+                    
+                </div>
+                <div class="forHoverOnPlate">
+                    <img src="images\imagesForPlates\contacts.png">
+                </div>
+                <div class="slideshow-container wide">
+        
+                    <div class="mySlides fade">
+                        <a href="project1.html">
+                            <img src="T:\studying\2kurs\Фронтенд\CoursePaper\images\imagesForSlider\imgForSliderMainPage1.png" >
+                        </a>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <a href="project1.html">
+                            <img src="T:\studying\2kurs\Фронтенд\CoursePaper\images\imagesForSlider\imgForSliderMainPage2.png" >
+                        </a>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <a href="project1.html">
+                            <img src="T:\studying\2kurs\Фронтенд\CoursePaper\images\imagesForSlider\imgForSliderMainPage3.png" >
+                        </a>
+                    </div>
+
+                </div>
+                
+                <script>
+                let slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {slideIndex = 1}    
+                    slides[slideIndex-1].style.display = "block";
+                    setTimeout(showSlides, 3500); // Change image every 2 seconds
+                }
+                </script>
+                <div>
+                    <img src="images\imagesForPlates\face.png">
+                </div>
+                <div>
+                    <img src="images\imagesForPlates\newInfo.png">
+                </div>
+                <div class="forHoverOnPlate">
+                    <a href="projectsAll.html">
+                        <img src="images\imagesForPlates\archNew.png">
+                    </a>
+                </div>
+                <div class="forHoverOnPlate">
+                    <img src="images\imagesForPlates\grDisNew.png">
+                </div>
+            </div>
+            
+        </main>
+
+        <footer>
+            
+            <section class="logoSect">
+                <div class="logo">
+                    <img src="images/otherImages/logoWithoutBackground.png">
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati totam sed ratione laborum quo hic facilis alias sapiente ab minus! Aspernatur quo dignissimos aliquam quod harum odit reprehenderit sed aliquid.</p> 
+            </section>
+            
+            <section class="mainPages"> 
+                <a href="index.html">Главная</a>
+                <a href="aboutMe.html">Обо мне</a>
+                <a href="projectsAll.html">Архитектура</a>
+                <a href="contacts.html">Связаться со мной</a>
+            </section>
+
+            <section class="contacts">
+                <p>Тел. +7-918-999-99-99</p>
+                <p>г. Москва</p>
+                <p>anastasiamatrosova@mail.ru</p>
+            </section>
+
+            
+
+
+            <section class="socials">
+                <a href="https://twitter.com/" class="icon-button twitter"><img src="T:\studying\2kurs\Фронтенд\ПР2-3-4\images\icons8-twitter-48.png" ></a>
+                <a href="https://facebook.com" class="icon-button facebook"><img src="T:\studying\2kurs\Фронтенд\ПР2-3-4\images\icons8-facebook-48.png" ></a>
+                <a href="https://plus.google.com" class="icon-button instagram"><img src="T:\studying\2kurs\Фронтенд\ПР2-3-4\images\icons8-instagram-48.png" ></a>
+                <a href="https://facebook.com" class="icon-button github"><img src="T:\studying\2kurs\Фронтенд\ПР2-3-4\images\icons8-github-48.png" ></a>
+                <a href="https://plus.google.com" class="icon-button youtube"><img src="T:\studying\2kurs\Фронтенд\ПР2-3-4\images\icons8-youtube-48.png" ></a>
+            </section>
+
+            <section class="copyright">
+                <p>© Anastasia Matrosova, 2022. Все права защищены</p>
+            </section>
+            
+
+        </footer>
+
+
+    </body>
+
+
+
+</html>
