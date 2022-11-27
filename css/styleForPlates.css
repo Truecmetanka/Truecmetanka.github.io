@@ -26,9 +26,7 @@ body, main {
     display: grid;
     grid-template-columns: 0.06fr 0.08fr 0.245fr 0.245fr 0.245fr 0.245fr;
     grid-template-rows: 8% auto auto auto ;
-    
-    gap: 5px;
-    
+    gap: 5px;    
   }
   
   .forHoverOnPlate {

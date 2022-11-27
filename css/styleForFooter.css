@@ -1,47 +1,55 @@
 footer {
-    background: linear-gradient(1deg, #000000, #aaa9a9);
-    height: 30vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.8fr 0.3fr;
-  
+    background: white;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.mainFooter {
+    display: flex;
+    margin: 3%;
+    border: 5px solid black;
+    padding-bottom: 3%;
 }
 
 .logo {
-    width: 25%;
+    width: 55%;
+    margin-top: 10px;
 }
 
 .logoSect {
-    margin-left: 10px;
-    border-right: 10px solid rgba(0, 0, 0, 0.308);
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 27%;
 }
-.logoSect p {
-    margin-right: 10px;
-    font-size: 1.2rem;
-    color: rgb(217, 223, 228);
-}
+
+
 
 
 
 /* Socials */
 
 .socials {
-    margin-left: 10px;
-    border-right: 10px solid rgba(0, 0, 0, 0.308);
+    
+    grid-column: span 2;
+    align-items: center;
+    justify-content: center;
 }
 
 .icon-button {
-	background-color: gray;
-	border-radius: 3.6rem;
+	background-color: rgb(0, 0, 0);
+	border-radius: 1.8rem;
 	cursor: pointer;
 	display: inline-block;
 	font-size: 2.0rem;
-	height: 3.6rem;
-	line-height: 3.6rem;
+	height: 1.8rem;
+	line-height: 1.8rem;
 	margin: 0 5px;
 	position: relative;
 	text-align: center;
-	width: 3.6rem;
+	width: 1.8rem;
     overflow: hidden;
 }
 
@@ -57,9 +65,9 @@ footer {
 .icon-button::after {
     left: 0;
     right: 0;
-    top: -100%;
+    top: -200%;
     bottom: 100%;
-    transition: all 0.7s;
+    transition: all 1.5s;
   }
 
 .icon-button:hover::after {
@@ -78,27 +86,34 @@ footer {
 
 /* Main pages */
 
-.mainPages {
-    display: flex;
-    flex-direction: column;
-    grid-row: span 3;
-    margin-left: 10px;
-    border-right: 10px solid rgba(0, 0, 0, 0.308);
-    font-size: 1.5rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.mainPages {  
+    margin-top: 5%;
+    width: 33%;
+    font-size: 1.2rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .contacts {
-    grid-row: span 3;
-    margin-left: 10px;
-    font-size: 1.5rem;
+   
+    width: 27%;
+    margin-top: 5%;
+    margin-left: 7%;
+    font-size: 1.2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .copyright {
-    color: white;
-    display: flex;
+    color: rgb(5, 5, 5);
     margin-left: 10px;
-    border-right: 10px solid rgba(0, 0, 0, 0.308);
-    align-items: flex-end;
+    align-self: center;
 }
