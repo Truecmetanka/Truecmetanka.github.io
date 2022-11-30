@@ -10,12 +10,24 @@
 .education {
     grid-row: span 3;
     margin: 7%;
-    border: 8px solid black !important;
+    border: 8px solid black ;
 }
 
 .experience {
     grid-column: span 3;
     margin: 5% 2% 5% 2%;
+}
+
+#expForMobile {
+    position: absolute;
+    width: 0;
+    opacity: 0;
+}
+
+#skForMobile {
+    position: absolute;
+    width: 0;
+    opacity: 0;
 }
 
 .scills {
@@ -32,4 +44,85 @@
     border: 5px solid black;
 }
 
+@media (max-width: 768px) {
+    .articleForAbout {
+      grid-template-rows: 0.13fr 0.40fr 0.36fr 0.65fr;
+      grid-template-columns: 1fr 1fr 1fr; 
+    }
+    .education {
+        grid-row: span 2;
+    }
+    .experience {
+        grid-column: span 2;
+    }
+    .scills {
+        grid-column: span 2;
+    }
+    .renov {
+        grid-row: span 2;
+    }
+  }
+
+  @media (max-width: 425px) {
+
+    .navPlates {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .articleForAbout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .education {
+        border: 0px solid rgba(0, 0, 0, 0);
+    }
+
+    #exp {
+        position: absolute;
+        width: 0;
+        opacity: 0;
+    }
+
+    #expForMobile {
+        position: relative;
+        width: 100%;
+        opacity: 1;
+        
+    }
+
+    #sk {
+        position: absolute;
+        width: 0;
+        opacity: 0;
+    }
+
+    #skForMobile {
+        position: relative;
+        width: 100%;
+        opacity: 1;
+    }
+
+    .experience {
+        border: 0px solid rgba(0, 0, 0, 0);
+    }
+    /* .education {
+        grid-row: span 1;
+    }
+    .experience {
+        grid-column: span 1;
+    }
+    .scills {
+        grid-column: span 1;
+    }
+    .renov {
+        grid-row: span 1;
+    } */
+    .logoForMedia {
+        position: absolute;
+        width: 0;
+    }
+      
+  }
 

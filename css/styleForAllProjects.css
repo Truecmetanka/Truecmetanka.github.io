@@ -42,3 +42,45 @@ h1 {
 	margin-left: 9%;
 	width: 86.7%;
 }
+
+@media (max-width: 768px) {
+	.project {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 5%;
+		margin-bottom: 5%;
+		
+	}
+
+	.maf {
+		padding-bottom: 10%;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
+
+}
+
+@media (max-width: 425px) {
+
+	.navPlates {
+        display: flex;
+        flex-direction: column;
+    }
+
+	h1 {
+		font-size: 7vw;
+	}
+
+	.logoForMedia {
+        position: absolute;
+        width: 0;
+    }
+
+	.project {
+		display: flex;
+		flex-direction: column;
+		
+	}
+}
