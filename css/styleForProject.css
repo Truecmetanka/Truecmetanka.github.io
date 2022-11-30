@@ -11,34 +11,160 @@
 	background-repeat: repeat;
 	width:100%; 
 	height:100%;
-    display: grid;
-    grid-template-rows: 0.69fr 0.275fr;
+ 
     position: relative;
 }
 
+.dots {
+    margin-bottom: 5%;
+}
+
+.slideshow-container {
+    margin-top: 5%;
+}
+
 .backgroundForProject img {
-    width: 80%;
-    height: 80%;
-    margin: 10%;
+    width: 90%;
+    margin-top: 5%;
     border: 5px solid black;
-    
 }
 
 .discriptionForProject {
-    
+    max-width: 1100px;
     padding: 1%;
-    margin: 0 10%;
+    margin: auto;
     width: 78%;
     border: 5px solid black;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    vertical-align: middle;
 }
 
 .text {
-    
+    margin-top: 5%;
     position: absolute;
     rotate: -90deg;
     left: -17%;
-    top: 39%;
+    top: 30%;
     font-size: 3vw;
     font-weight:bold;
+}
+
+
+
+@media (max-width: 768px) { 
+    .discriptionForProject {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 425px) {
+
+
+	.navPlates {
+        display: flex;
+        flex-direction: column;
+    }
+
+	.logoForMedia {
+        position: absolute;
+        width: 0;
+    }
+
+    .mainPartOfProject{
+        grid-template-columns: 0px 1fr;
+    }
+    
+    .text {
+        position: relative;
+        rotate:0deg;
+        left: 5%;
+        top: 0;
+        font-size: 6vw;
+        font-weight:bold;
+        margin: 0 auto;
+    }
+
+    .discriptionForProject {
+        font-size: 6vw;
+    }
+}
+
+
+* {box-sizing: border-box}
+                        
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1100px;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    background-color: orange;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@media (max-width: 1350px) { 
+    .slideshow-container {
+        margin: 0 10%
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media (max-width: 300px) {
+    .prev, .next {font-size: 11px}
 }
